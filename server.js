@@ -44,35 +44,6 @@ app.use('/api', upload);
 app.use('/owner', Owner);
 
 
-
-
-
-
-
-//console.log("data",SliderData[0].cover);
-// try {
-//     const result =  Order.insertMany(orders);
-//     if (result) {
-//         console.log('Record successfully Inserted:');
-//     } else {
-//         console.log('No record found with that _id');
-//     }
-// } catch (error) {
-//     console.error('Error deleting record:', error);
-// }
-// try {
-//     const result =  User.insertMany(userinfo);
-//     if (result) {
-//         console.log('Record successfully Inserted:');
-//     } else {
-//         console.log('No record found with that _id');
-//     }
-// } catch (error) {
-//     console.error('Error deleting record:', error);
-// }
-
-//API route to fetch all products
-
 app.get('/api/products/:id', async (req, res) => {
     try {
         const productId = req.params.id; // Get the 'id' parameter from the
